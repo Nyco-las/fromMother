@@ -3,7 +3,7 @@
         margin: 20;
         padding: 20;
         overflow: hidden;
-        background: rgba(252, 175, 213, 0.521); /* cor suave */
+        background:#ffdeff; /* cor suave */
       }
       .coracao {
         position: fixed;
