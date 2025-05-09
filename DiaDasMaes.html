@@ -13,6 +13,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        const totalCoracoes = 60;
+    
+        for (let i = 0; i < totalCoracoes; i++) {
+          const coracao = document.createElement('div');
+          coracao.classList.add('coracao');
+          coracao.innerText = '❤️';
+    
+          const size = Math.random() * 20 + 10;
+          coracao.style.fontSize = `${size}px`;
+    
+          const topPos = Math.random() * window.innerHeight;
+          coracao.style.top = `${topPos}px`;
+    
+          const delay = Math.random() * 2;
+          coracao.style.animationDelay = `${delay}s`;
+    
+          const direcao = Math.random() < 0.1 ? 'moverDireita' : 'moverEsquerda';
+          coracao.style.animationName = direcao;
+    
+          const duration = Math.random() * 10 + 5;
+          coracao.style.animationDuration = `${duration}s`;
+    
+          document.body.appendChild(coracao);
+        }
+      </script>
 
        <header> <h1 class=" moverLetras">Feliz dia das Mães </h1> </header>
 
@@ -25,6 +51,7 @@
     <img src="images/mae.guto.png" alt="animation">
     <img src="images/mae.dudu.png" alt="animation">
     <img src="images/mae.eu.png" alt="animation">
+
     
 
     
